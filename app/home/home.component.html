@@ -1,0 +1,42 @@
+<GridLayout>
+	<ScrollView>
+		
+		<StackLayout>
+			
+			<GridLayout  rows="220, auto"  columns="*, *, *" style='background-image:url("~/resources/backgroundregister.png");'>
+		 
+				<Label row="0" col="1" text="SubastasRD" style="color:white; font-size:22px; font-weight:bold;"  textWrap="true" row="0" colSpan="1" horizontalAlignment="center" verticalAlignment="center"></Label>
+			</GridLayout> 
+			<!--Add your page content here-->
+			<Label textWrap="true" text="SubastasRD" class="h2 description-title"></Label>
+			<Label textWrap="true" text="Es una App creada para aquellas personas que le gusta las subastas en linea donde puede ofertar o comprar un producto de forma rapida y sencilla"
+			 class="h2 description-content"></Label>
+			<Label textWrap="true" text="Registrese y comience la experiencia de subastar y obtener productos de las subastas que aparecen en el muro."
+			 class="h2 description-content"></Label>
+			<StackLayout class="hr-light m-10" margin="5px"></StackLayout>
+
+			<Label textWrap="true" text="Registrarse" class="h2 description-content2"></Label>
+
+			<Image src="~/resources/backgroundperfil.png" #img width="250px" height="250px"></Image>
+
+			<Label textWrap="true" text="Registre una foto de perfil" class="h2 description-title" style="margin-top:30px;"></Label>
+ 
+			<Image src="~/resources/botoncamarachat.png" (tap)="openDialogSel()" width="100px" height="100px" marginBottom="50px"></Image>
+
+			<TextField class="tfstyle" [(ngModel)]="textFieldValue" style="color:#D8D8D8;  placeholder-color:#D8D8D8;" marginRight="100px"
+			 marginTop="50px" marginLeft="100px" color="red" hint="Nombre"></TextField>
+
+			<TextField class="tfstyle" [(ngModel)]="textFieldValue" style="color:#D8D8D8; placeholder-color:#D8D8D8;" marginRight="100px"
+			 marginTop="50px" marginLeft="100px" hint="Apellidos"></TextField>
+
+			<TextField class="tfstyle" [(ngModel)]="textFieldValue" style="color:#D8D8D8; placeholder-color:#D8D8D8;" marginRight="100px"
+			 marginTop="50px" marginLeft="100px" hint="(809)-000-0000"></TextField>
+
+			<Label textWrap="true" text="Acepto cada uno de los Terminos y Condiciones planteados por SubastasRD" marginTop="70px" class="h2 description-content"></Label>
+ 
+			<Button text="Aceptar" (tap)="initCamera()" class="btn"></Button>  
+		</StackLayout>
+	</ScrollView>
+</GridLayout>
+
+
